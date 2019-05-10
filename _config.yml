@@ -39,7 +39,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+gems: [jekyll-paginate,jekyll-mermaid]
 
 
 
@@ -52,7 +52,8 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
+mermaid:
+  src: '/js/mermaid.min.js'
 
 
 # 评论系统

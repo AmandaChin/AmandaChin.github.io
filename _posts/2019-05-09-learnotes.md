@@ -13,17 +13,23 @@ tags:
 
 > 本章主要对搜索广告的业务进行介绍，搜索广告模块可以分为**广告检索、广告排序、流量分配**三大子模块。
 
-```mermaid
+<div class="mermaid">
 graph LR;
-　　 A(搜索广告) --> B[广告检索]
-    A --> C[广告排序]
-    A --> D[流量分配]
-    B --> E1[广告索引]
-    B --> E2[广告匹配]
-    C --> H[ML方法预估点击率]
-    E2 --> G[分词,查询纠错,查询扩张等...]
-    E1 --> F[键值对索引]
-```
+　　 A(搜索广告)-.->B[广告检索]
+    A-.->C[广告排序]
+    A-.->D[流量分配]
+    B -.-> E1[广告索引]
+    B -.-> E2[广告匹配]
+    C -.-> H[ML方法预估点击率]
+    E2 -.-> G[分词,查询纠错,查询扩张等...]
+    E1 -.-> F[键值对索引]
+    classDef className fill:#f9f,stroke:#333,stroke-width:4px;
+    class B,C,D className;
+    style A fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
+</div>
+
+
+
 ## 广告检索
 
 >一般来说，广告检索需要经过三个步骤，**广告分析，关键字分析和相关性匹配**。
