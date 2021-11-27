@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      git多账号配置
-subtitle:   
+subtitle:   hh
 date:       2021-11-21
 author:     Ann
 header-img: img/bg-street.jpg
@@ -9,6 +9,7 @@ catalog: true
 tags:
     - 环境配置
 ---
+
 > 以配置github环境为示例。
 
 - Step 1
@@ -60,7 +61,7 @@ ssh-add ~/.ssh/私钥文件名
 
 - Step 4
 在`~/.ssh`目录下，配置config文件
-```
+``` shell
 # github 
 Host github
 HostName github.com
