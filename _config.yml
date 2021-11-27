@@ -5,7 +5,8 @@ header-img: img/post-bg-desk.jpg
 email: nk_Anying@163.com
 description: "Hey."
 keyword: "Ann, 小安安，小安安有小酒窝"
-url: "http://AmandaChin.github.io"          # your host, for absolute URL
+url: "http://ayblog.xyz/"          # your host, for absolute URL
+root: "AmandaChin.github.io"
 baseurl: "AmandaChin.github.io/blog"   
 github_repo: "https://github.com/AmandaChin/AmandaChin.github.io.git" # you code repository
 
@@ -20,9 +21,6 @@ sidebar-avatar: /img/ay-avatar.jpg      # use absolute URL, seeing it's used in 
 RSS: false
 weibo_username:     
 github_username:    AmandaChin
-# facebook_username:  baiying.qiu.7
-# jianshu_username:   e71990ada2fd
-#twitter_username:   qiubaiying
 
 
 
