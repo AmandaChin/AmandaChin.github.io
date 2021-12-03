@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      git多账号配置
-subtitle:   hh
+subtitle:   
 date:       2021-11-21
 author:     Ann
 header-img: img/bg-street.jpg
@@ -61,19 +61,18 @@ ssh-add ~/.ssh/私钥文件名
 
 - Step 4
 在`~/.ssh`目录下，配置config文件
+
 ``` shell
 # github 
 Host github
 HostName github.com
 User AmandaChin
 IdentityFile ~/.ssh/id_rsa_github
-
 # 配置文件参数
 # Host : Host可以看作是一个你要识别的模式，对识别的模式，进行配置对应的的主机名和ssh文件
 # HostName : 要登录主机的主机名
 # User : 登录名
 # IdentityFile : 指明上面User对应的identityFile路径
-
 ```
 
 - Step 5
