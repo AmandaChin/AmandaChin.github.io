@@ -89,3 +89,13 @@ SSH -T git@github.com
 git config --local user.name "***"
 git config --local user.email   
 ```
+
+## 问题更新
+### 本地无法打开github or git操作显示timedOut
+- ping github.com看下访问是否正常
+- 修改host中的IP地址(https://ipaddress.com/website/github.com)
+
+[查看IP地址参考](https://blog.csdn.net/qq_32563773/article/details/106273247)  
+[修改mac host](https://www.jianshu.com/p/0260cbc51687)
+
+- ip地址会变，遇到此问题可以先试下注释掉host中的配置
