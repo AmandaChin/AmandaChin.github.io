@@ -11,6 +11,7 @@ tags:
     - 插件化
 ---
 > 介绍《Android插件化开发指南》中通用插件化方案
+
 ## Activity
 ### 对启动Activity行为hook
 假设我们需要在启动Activity过程中落日志记录，有以下几种方法：
@@ -25,14 +26,14 @@ tags:
 - 方案1：为每个插件创建一个ClassLoader
 ActivityThread.performLaunchActivity方法如下：
 
-    ```java
+```java
     private Activity performLaunchActivity() {
         Activity activity  = null;
         java.lang.ClassLoader cl = r.packageInfo.getClassLoader();
         activity = mInstrumentation.newActivity(cl,component.getClassName(),r.intent);
         return activity;
     }
-    ```
+```
     
     在执行newActivity方法时需要制定classLoader，这个classLoader是通过LoadedApk（r.packageInfo）读取出来的，他是一个缓存的对象。
 
