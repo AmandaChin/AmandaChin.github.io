@@ -27,7 +27,8 @@ git config --global --unset user.email
 - Step 2
 
 在`~/.ssh`目录下生成对应的秘钥，使用命令`ssh-keygen -t rsa -C "邮箱"`
-```
+
+```shell
 ssh wangcheng$ ssh-keygen -t rsa -C "***@163.com"
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/wangcheng/.ssh/id_rsa): id_rsa_github
@@ -52,17 +53,20 @@ The key's randomart image is:
 ```
 复制`id_rsa_github.pub`公钥到github的ssh配置中。
 
-- Step 3
+- Step 3 
 
 添加私钥
-```
+
+```shell
 ssh-add ~/.ssh/私钥文件名
 ```
 
-- Step 4
+- Step 4 
+
 在`~/.ssh`目录下，配置config文件
 
-``` shell
+
+```shell
 # github 
 Host github
 HostName github.com
@@ -73,11 +77,14 @@ IdentityFile ~/.ssh/id_rsa_github
 # HostName : 要登录主机的主机名
 # User : 登录名
 # IdentityFile : 指明上面User对应的identityFile路径
+end
+
 ```
 
 - Step 5
 
 测试是否连接成功
+
 ```
 SSH -T git@github.com
 ```
